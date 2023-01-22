@@ -37,7 +37,7 @@ app.get('/encode/:url/:password', async (req, res) => {
         const URL = req.params.url
         const password = req.params.password
         res.send(encode(URL, password));
-        console.log(url + " " + password);
+        console.log(URL + " " + password);
     } catch (err) {
         console.log(err)
     }
