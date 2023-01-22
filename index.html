@@ -8,6 +8,7 @@
     <title>Link Locker</title>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body>
@@ -15,15 +16,17 @@
         <h1>🔒 Link Locker</h1>
     </nav>
     <form>
-        <input value="google.com" class="" id="url-input" type="text" id="fname" name="fname" placeholder="URL">
+        <input value="" class="" id="url-input" type="text" id="fname" name="fname" placeholder="URL">
         <br>
-        <input value="123" id="password-input" type="text" id="lname" name="lname" placeholder="PASSWORD">
+        <input value="" id="password-input" type="text" id="lname" name="lname" placeholder="Password">
         <br>
-        <input class="hide" id="copy-output" type="text" id="lname" name="lname" placeholder="PASSWORD">
+        <input class="hide" id="copy-output" type="text" id="lname" name="lname">
         <br>
-        <button id="button" type="button">SUBMIT</button>
+        <button id="button" type="button">Submit</button>
+        <button onclick="copy()" id="copy-button" class="hide" id="button" type="button">Copy</button>
     </form>
-    <p id="url"></p>
+    <!-- The actual snackbar -->
+    <div id="snackbar">Copied</div>
 </body>
 
 </html>
