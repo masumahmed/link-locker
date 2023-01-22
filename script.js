@@ -12,7 +12,7 @@ document.getElementById('button').addEventListener("click", function () {
     let password = document.querySelector('#password-input').value;
 
     if (encoder == true) {
-        fetch('http://127.0.0.1:3000/encode/' + url + '/' + password, {
+        fetch('http://192.168.1.101:3000/encode/' + url + '/' + password, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -23,7 +23,7 @@ document.getElementById('button').addEventListener("click", function () {
             .catch(error => console.error(error));
 
     } else {
-        fetch('https://127.0.0.1:3000/decode/' + hash + '/' + password, {
+        fetch('http://192.168.1.101:3000/decode/' + hash + '/' + password, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'

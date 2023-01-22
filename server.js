@@ -37,7 +37,7 @@ app.get('/encode/:url/:password', async (req, res) => {
         const URL = req.params.url
         const password = req.params.password
         res.send(encode(URL, password));
-        console.log("working");
+        console.log(url + " " + password);
     } catch (err) {
         console.log(err)
     }
@@ -48,6 +48,7 @@ app.get('/decode/:hash/:password', (req, res) => {
         const Hash = req.params.hash
         const password = req.params.password
         res.send(decode(Hash, password));
+        console.log(Hash + " " + password);
     } catch (err) {
         console.log(err)
     }
