@@ -1,0 +1,63 @@
+html {
+  margin: 0;
+}
+
+body {
+  background-color: #fff;
+}
+
+nav h1 {
+  text-align: center;
+  font-size: 32px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+form {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 300px;
+}
+form input[type=text],
+form button {
+  font-size: 18px;
+  padding: 10px;
+  border: 2px solid #485bc5;
+  background-color: #fff;
+  width: 380px;
+  margin: 10px;
+  border-radius: 10px;
+  color: black;
+  box-sizing: border-box;
+  text-align: center;
+}
+form input[type=text]::-moz-placeholder, form button::-moz-placeholder {
+  text-align: center;
+}
+form input[type=text]:-ms-input-placeholder, form button:-ms-input-placeholder {
+  text-align: center;
+}
+form input[type=text]::placeholder,
+form button::placeholder {
+  text-align: center;
+}
+form button {
+  background-color: #485bc5;
+  color: white;
+}
+form button:hover {
+  background-color: #3a4aa0;
+  border-color: #3a4aa0;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+form button::-moz-selection {
+  background-color: red;
+}
+form button::selection {
+  background-color: red;
+}
+
+.hide {
+  display: none;
+}/*# sourceMappingURL=styles.css.map */
